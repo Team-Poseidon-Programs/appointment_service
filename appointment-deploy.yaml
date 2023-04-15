@@ -6,7 +6,7 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: appoitment-api-service
+      app: appointment-api-service
   template:
     metadata:
       labels:
