@@ -28,4 +28,108 @@ spec:
                 port:
                   # Specify the port number of the backend service to forward requests to
                   number: 80
+    - # Specify the host name for this rule
+      http:
+        paths:
+          - # Specify the path to match for this rule
+            path: /api/Appointment/Add_appointment
+            pathType: Prefix
+            backend:
+              service:
+                # Specify the name of the backend service to forward requests to
+                name: appointment-api-service
+                port:
+                  # Specify the port number of the backend service to forward requests to
+                  number: 80
+    - # Specify the host name for this rule
+      http:
+        paths:
+          - # Specify the path to match for this rule
+            path: /api/Appointment/Add_appointment
+            pathType: Prefix
+            backend:
+              service:
+                # Specify the name of the backend service to forward requests to
+                name: appointment-api-service
+                port:
+                  # Specify the port number of the backend service to forward requests to
+                  number: 80
+    - # Specify the host name for this rule
+      http:
+        paths:
+          - # Specify the path to match for this rule
+            path: /api/Appointment/GetbyAcceptance/?p*
+            pathType: Prefix
+            backend:
+              service:
+                # Specify the name of the backend service to forward requests to
+                name: appointment-api-service
+                port:
+                  # Specify the port number of the backend service to forward requests to
+                  number: 80
+    - # Specify the host name for this rule
+      http:
+        paths:
+          - # Specify the path to match for this rule
+            path: /api/Appointment/GetbyPatientID/?p*
+            pathType: Prefix
+            backend:
+              service:
+                # Specify the name of the backend service to forward requests to
+                name: appointment-api-service
+                port:
+                  # Specify the port number of the backend service to forward requests to
+                  number: 80
+    - # Specify the host name for this rule
+      http:
+        paths:
+          - # Specify the path to match for this rule
+            path: /api/Appointment/updateby_patID/?p*
+            pathType: Prefix
+            backend:
+              service:
+                # Specify the name of the backend service to forward requests to
+                name: appointment-api-service
+                port:
+                  # Specify the port number of the backend service to forward requests to
+                  number: 80
+    - # Specify the host name for this rule
+      http:
+        paths:
+          - # Specify the path to match for this rule
+            path: /api/Appointment/AcceptanceAndEmail/?p*
+            pathType: Prefix
+            backend:
+              service:
+                # Specify the name of the backend service to forward requests to
+                name: appointment-api-service
+                port:
+                  # Specify the port number of the backend service to forward requests to
+                  number: 80
+    - # Specify the host name for this rule
+      http:
+        paths:
+          - # Specify the path to match for this rule
+            path: /api/Appointment/updatebyAppointMentNo/?p*
+            pathType: Prefix
+            backend:
+              service:
+                # Specify the name of the backend service to forward requests to
+                name: appointment-api-service
+                port:
+                  # Specify the port number of the backend service to forward requests to
+                  number: 80
+    - # Specify the host name for this rule
+      http:
+        paths:
+          - # Specify the path to match for this rule
+            path: /api/Appointment/GetByDateAcceptanceNoDoctorEmail/?p*
+            pathType: Prefix
+            backend:
+              service:
+                # Specify the name of the backend service to forward requests to
+                name: appointment-api-service
+                port:
+                  # Specify the port number of the backend service to forward requests to
+                  number: 80
          
